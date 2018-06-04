@@ -22,14 +22,18 @@ Non-queuing organisms, their population's net emigration rate depends
 */
 
 /*Libraries I depend upon for some functions  */
-#include <stdlib.h>
-#include <studio.h>
+#include <stdlib.h> /* Call random number generator drand48() */
+#include <studio.h> /* Use printf() */
 
 /*Global variables, they can be changed through the whole program  */
 #define MAXTIME 100
 #define PRNTTIME 10
 /*  */
-int main(void)
+/* First procedure to be called */
+int main(void) /* The int represents that the program eventually expects
+    a particular type of number after the program finishes executing */
+    /* The void denotes that the program expects nothing to be passed to
+    it from the operating system when execution starts */
 {
     /* Every variable must have it's type predefined before be used */
     int ttt, event, n;
